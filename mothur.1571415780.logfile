@@ -1,0 +1,95 @@
+Linux version
+
+Using ReadLine,Boost,HDF5
+mothur v.1.41.1
+Last updated: 11/26/18
+by
+Patrick D. Schloss
+
+Department of Microbiology & Immunology
+
+University of Michigan
+http://www.mothur.org
+
+When using, please cite:
+Schloss, P.D., et al., Introducing mothur: Open-source, platform-independent, community-supported software for describing and comparing microbial communities. Appl Environ Microbiol, 2009. 75(23):7537-41.
+
+Distributed under the GNU General Public License
+
+Type 'help()' for information on the commands that are available
+
+For questions and analysis support, please visit our forum at https://www.mothur.org/forum
+
+Type 'quit()' to exit program
+
+Batch Mode
+
+
+mothur > set.dir(input=/mnt/d/PLOS_One_rebuttal/data)
+Mothur's directories:
+/mnt/d/PLOS_One_rebuttal/data/ directory does not exist or is not writable.
+
+mothur > set.dir(output=/mnt/d/PLOS_One_rebuttal/mothur_output)
+Mothur's directories:
+outputDir=/mnt/d/PLOS_One_rebuttal/mothur_output/
+
+mothur > screen.seqs(fasta=full.fasta,maxambig=0, maxlength=275,processors=6)
+Unable to open full.fasta. Trying output directory /mnt/d/PLOS_One_rebuttal/mothur_output/full.fasta.
+Unable to open /mnt/d/PLOS_One_rebuttal/mothur_output/full.fasta. Trying default /mnt/d/software/mothur1.4.1/mothur/full.fasta.
+Unable to open /mnt/d/software/mothur1.4.1/mothur/full.fasta. Trying mothur's executable location /mnt/d/software/mothur1.4.1/mothur/full.fasta.
+Unable to open /mnt/d/software/mothur1.4.1/mothur/full.fasta.
+Unable to open full.fasta
+
+Using 6 processors.
+[ERROR]: did not complete screen.seqs.
+
+mothur > count.seqs(name=current, group=current)
+[WARNING]: no file was saved for group parameter.
+[WARNING]: no file was saved for name parameter.
+You have no current namefile or sharedfile and the name or shared parameter is required.
+[ERROR]: did not complete count.seqs.
+
+mothur > unique.seqs(fasta=current, name=current)
+[WARNING]: no file was saved for fasta parameter.
+[WARNING]: no file was saved for name parameter.
+You have no current fastafile and the fasta parameter is required.
+[ERROR]: did not complete unique.seqs.
+
+mothur > align.seqs(fasta=current, processors=6)
+[WARNING]: no file was saved for fasta parameter.
+[ERROR]: The reference parameter is a required for the align.seqs command, aborting.
+You have no current fastafile and the candidate parameter is required.
+
+Using 6 processors.
+[ERROR]: did not complete align.seqs.
+
+mothur > align.seqs(reference=/mnt/d/data/fastq_files/ref/silva.v4.fasta, processors=6)
+You have no current fastafile and the candidate parameter is required.
+
+Using 6 processors.
+[ERROR]: did not complete align.seqs.
+
+mothur > screen.seqs(fasta=current, processors=6)
+[WARNING]: no file was saved for fasta parameter.
+You have no current fastafile and the fasta parameter is required.
+
+Using 6 processors.
+[ERROR]: did not complete screen.seqs.
+
+mothur > filter.seqs(fasta=current, processors=6)
+[WARNING]: no file was saved for fasta parameter.
+You have no current fastafile and the fasta parameter is required.
+
+Using 6 processors.
+[ERROR]: did not complete filter.seqs.
+
+mothur > unique.seqs(fasta=current, name=current)
+[WARNING]: no file was saved for fasta parameter.
+[WARNING]: no file was saved for name parameter.
+You have no current fastafile and the fasta parameter is required.
+[ERROR]: did not complete unique.seqs.
+
+mothur > pre.cluster(fasta=current, name=current, diffs=2, processors=1)
+[WARNING]: no file was saved for fasta parameter.
+[WARNING]: no file was saved for name parameter.
+You have no current fastafile and the fasta parameter is required.
